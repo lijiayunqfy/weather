@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the overtrue/weather.
+ *
+ * (c) overtrue <i@overtrue.me>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Overtrue\Weather;
 
 use GuzzleHttp\Client;
@@ -11,9 +20,6 @@ class Weather
     protected $key;
     protected $guzzleOptions = [];
 
-    /**
-     * @param string $key
-     */
     public function __construct(string $key)
     {
         $this->key = $key;
@@ -33,7 +39,6 @@ class Weather
     /**
      * @Notes:
      *
-     * @param array $options
      * @author: Lijianyun
      */
     public function setGuzzleOptions(array $options)
@@ -45,8 +50,6 @@ class Weather
      * @Notes:
      *
      * @param $city
-     * @param string $type
-     * @param string $format
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Overtrue\Weather\Exceptions\HttpException
@@ -68,9 +71,9 @@ class Weather
         }
 
         $query = array_filter([
-            'key'        => $this->key,
-            'city'       => $city,
-            'output'     => \strtolower($format),
+            'key' => $this->key,
+            'city' => $city,
+            'output' => \strtolower($format),
             'extensions' => \strtolower($type),
         ]);
 
