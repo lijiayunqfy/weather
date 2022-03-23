@@ -2,7 +2,10 @@
 
 <p align="center"> A Weather Sdk.</p>
 
+<p align="center"> A Weather Sdk.</p>
+
 [![Tests](https://github.com/lijiayunqfy/weather/actions/workflows/tests.yml/badge.svg)](https://github.com/lijiayunqfy/weather/actions/workflows/tests.yml)
+[![StyleCI](https://github.styleci.io/repos/472431783/shield?branch=master)](https://github.styleci.io/repos/472431783?branch=master)
 ## Installing
 
 ```shell
