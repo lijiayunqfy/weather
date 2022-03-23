@@ -52,7 +52,7 @@ class Weather
      * @throws \Overtrue\Weather\Exceptions\InvalidArgumentException
      * @author: Lijianyun
      */
-    protected function getWeather($city, string $type = 'base', string $format = 'json')
+    public function getWeather($city, string $type = 'base', string $format = 'json')
     {
         $url = 'http://restapi.amap.com/v3/weather/weatherInfo';
 
