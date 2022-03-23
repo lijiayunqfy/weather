@@ -2,7 +2,7 @@
 
 <p align="center"> A Weather Sdk.</p>
 
-
+[![Tests](https://github.com/lijiayunqfy/weather/actions/workflows/tests.yml/badge.svg)](https://github.com/lijiayunqfy/weather/actions/workflows/tests.yml)
 ## Installing
 
 ```shell
