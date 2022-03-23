@@ -1,11 +1,7 @@
 <?php
+
 namespace Overtrue\Weather\Tests;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Psr7\Response;
-use Mockery\Matcher\AnyArgs;
-use Overtrue\Weather\Exceptions\HttpException;
 use Overtrue\Weather\Exceptions\InvalidArgumentException;
 use Overtrue\Weather\Weather;
 use PHPUnit\Framework\TestCase;
@@ -35,6 +31,4 @@ class WeatherTest extends TestCase
 
         $this->fail('Failed to assert getWeather throw exception with invalid argument.');
     }
-
-
 }
